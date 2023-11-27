@@ -1,0 +1,81 @@
+.T_1{
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+}
+.T_2{
+    border: 4px solid rgb(139, 31, 31);
+}
+.main_h1{
+    color: #2d2f31;
+}
+.main_h3{
+    color: #2d2f31;
+    margin-top: 3.5rem;
+}
+.all_Span{
+ 
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
+}
+.all_Span >span{
+   font-weight: 800;
+   color: gray;
+   margin-right: 1rem;
+}
+.all_Span> span:hover{
+    color: black;
+}
+.middle{
+    border: 3px solid orange;
+    height:300px;
+}
+.show_data_1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.m_1{
+   border-top: 2px solid gray;
+   border-bottom:  2px solid gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.m_Icons{
+    border: 2px solid brown;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    font-size: 2rem;
+
+
+}
+.m_description{
+    border: 2px solid salmon;
+    font-weight: 800;
+    width: 20rem;
+   
+}
+.m_2{
+    border: 2px solid rgb(165, 42, 157);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+.populer_Topics_Parent{
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.populer_Topics_Child{
+    border: 3px solid rgb(43, 0, 255);
+}
+.populer_Topics_p{
+    border: 2px solid black;
+}
