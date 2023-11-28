@@ -10,8 +10,8 @@ import TechOnUdemy from './Components/TechOnUdemy/TechOnUdemy';
 function App() {
   return (
     <div>
-       {/* <Home/>   */}
-       {/* <TechOnUdemy/>  */}
+       {/* <Home/>   
+        <TechOnUdemy/>  */}
        {/* <BrowserRouter> */}
       <Router/>
        {/* </BrowserRouter>

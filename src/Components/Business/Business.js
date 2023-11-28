@@ -6,6 +6,7 @@ import "./All.css"
 import { IoMdPlay } from "react-icons/io";
 import { MdStarRate } from "react-icons/md";
 import { IoInfiniteOutline } from "react-icons/io5";
+import { FaExclamation } from "react-icons/fa6";
 
 
 
@@ -16,6 +17,7 @@ import { useParams } from "react-router-dom";
                     const params =useParams()
                     console.log(params)
                     const[data,setData]=useState([])
+
                     useEffect(()=>{
                         axios.get("http://localhost:4005/api/postdata")
                         .then((res)=>setData(res.data))
@@ -23,8 +25,15 @@ import { useParams } from "react-router-dom";
         
                     },[])
                    
-                   
-
+//                     const filter=data && data.filter((item)=>
+//                     {if(item.category===params.category){
+//                         return (
+//                             item
+//                         )
+//                     }
+//                 })
+//                 console.log(data)
+//  console.log(filter)
                     return(
                         <>
                         <div>
@@ -43,7 +52,7 @@ import { useParams } from "react-router-dom";
                                data.filter((item)=>item.type===params.category).slice(0,5).map((item)=>{
                                 return(
                                     <div className="middle">
-                                        <img src={item.img}/>
+                                        <img src={item.img} alt="Not Fond"/>
                                         <div className="homeTitle">{item.title.slice(0,45)}...</div>                                      
                                         <div className="homeWriter">{item.writer}</div>
                                         <div className="homeRating">{item.rating}</div>
@@ -76,23 +85,38 @@ import { useParams } from "react-router-dom";
 
                     {/* Populer Topics................ */}
 
-                        <div className="populer_Topics_Parent">
-                            {data.filter((item)=>
-                                {if(item.category===params.category){
-                                    return (
-                                        item.populerTopics
-                                    )
-                                }
-                            }
-                            ).map((item)=>{
+                        <div>
+                            {/* {
+                            filter[0].populerTopics.map((item)=>{
+                                console.log(item)
                                 return(
                                     <div className="populer_Topics_Child">
-                                       <div className="populer_Topics_p"> <p>{item.populerTopics}</p></div>
+                                     <p>{item}</p>
                                     </div>
                                 )
                             })
 
-                            }
+                            } */}
+                        </div>
+
+                        <div>
+                            <div>
+                                <h2>All {params.category} course</h2>
+                                <div>
+                                    <div><FaExclamation /></div>
+                                    <div>Not sure? All courses have a 30-day money-back guarantee</div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>--</div>
+                                        <div>Filter</div>
+                                    </div>
+                                    <div>
+                                    <div>Sort by</div>
+                                    <div>Most Populer</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <h1>Second data</h1>
@@ -100,7 +124,11 @@ import { useParams } from "react-router-dom";
                                data.filter((item)=>item.type===params.category).slice(5,13).map((item)=>{
                                 return(
                                     <div>
-                                        <img src={item.img}/>
+                                       <img src={item.img} alt="Not Fond"/>
+                                        <div className="homeTitle">{item.title.slice(0,45)}...</div>                                      
+                                        <div className="homeWriter">{item.writer}</div>
+                                        <div className="homeRating">{item.rating}</div>
+                                        <div className="homePrice">&#8377;{item.price}</div>
 
                                     </div>
                                 )

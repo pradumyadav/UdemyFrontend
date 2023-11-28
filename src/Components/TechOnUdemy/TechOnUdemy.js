@@ -5,7 +5,7 @@ import "./Tech.css"
             return(
               <div>
                 <div className="techOnUdemy_Parent">    
-                       <img src="https://s.udemycdn.com/teaching/billboard-desktop-v4.jpg"/>
+                       <img src="https://s.udemycdn.com/teaching/billboard-desktop-v4.jpg" alt="Not Fond"/>
                 </div>
 
                 <div className="tech_Second_Parent">
@@ -72,13 +72,13 @@ import "./Tech.css"
                             </div>
                         </div>
                         <div className="begin_Right_Child2">
-                            <img src="https://s.udemycdn.com/teaching/plan-your-curriculum-v3.jpg"/>
+                            <img src="https://s.udemycdn.com/teaching/plan-your-curriculum-v3.jpg" alt="Not Fond"/>
                         </div>
                     </div>
                 </div>
                 <div className="launch_ParentOf_Parent">
                     <div className="launch_Parent">
-                    <div className="launch_Img"><img src="https://s.udemycdn.com/teaching/instructors/en/frank-1x-v2.jpg"/></div>
+                    <div className="launch_Img"><img src="https://s.udemycdn.com/teaching/instructors/en/frank-1x-v2.jpg" alt="Not Fond"/></div>
                     <div className="launch_Des">
                         <div className="launch_Des_Child">
                         <p>“I’m proud to wake up knowing my work is helping people around the world improve their careers and build great things. While being a full-time instructor is hard work, it lets you work when, where, and how you want.”</p>
@@ -89,7 +89,7 @@ import "./Tech.css"
                     </div>
                 </div>
                 <div className="second_Last_Parent">
-                   <img src="https://s.udemycdn.com/teaching/support-1-v3.jpg"/>
+                   <img src="https://s.udemycdn.com/teaching/support-1-v3.jpg" alt="Not Fond"/>
                    
                         <div className="second_Last_Middle">
                             <h1>You won’t have to do it alone</h1>
@@ -97,7 +97,7 @@ import "./Tech.css"
                                 <p>Need more details you start? Learn more</p>
                         </div>
                    
-                    <div> <img src="https://s.udemycdn.com/teaching/support-2-v3.jpg"/></div>
+                    <div> <img src="https://s.udemycdn.com/teaching/support-2-v3.jpg" alt="Not Fond"/></div>
                 </div>
                 <div className="Last_Parent">
                     <div  className="Last_Parent_Child">

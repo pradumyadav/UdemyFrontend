@@ -75,7 +75,7 @@ import { useEffect, useState } from "react";
                                             return(
                                                 <div  className="homeChild" key={index}> 
                                                
-                                                    <div className="homeImg"><img src={item.img}/></div>
+                                                    <div className="homeImg"><img src={item.img} alt="Not Fond"/></div>
                                                     <div className="homChild2">
                                                     <div className="homeTitle">{item.title.slice(0,45)}...</div>
                                                     <div className="homeWriter">{item.writer}</div>
@@ -95,7 +95,7 @@ import { useEffect, useState } from "react";
                                 <div className="learningChild">
                                 <div className="learningSubchild">
                                 <div className="learningMargin">
-                                   <div className="quote"><img src={img10}/></div>
+                                   <div className="quote"><img src={img10} alt="Not Fond"/></div>
                                     <div>I am proud to say that after a few months of
                                     taking this course...<span className="middleSpan">I passed my exam and am</span>
                                     <span style={{fontSize:"14px",fontWeight:"800"}}>now an AWS Certified Cloud Practitioner!</span>
@@ -107,13 +107,13 @@ import { useEffect, useState } from "react";
                                         </div>
                                     </div>
                                     <div className="playFlexs">
-                                    <img className="playButton" src={img11}/>
+                                    <img className="playButton" src={img11} alt="Not Fond"/>
                                     <span >[NEW] Ultimate AWS Certified Cloud Practitioner</span>
                                     </div>
                                 </div>
                                <div className="learningSubchild">
                                 <div className="learningMargin">
-                                   <div className="quote"><img src={img10}/></div>
+                                   <div className="quote"><img src={img10} alt="Not Fond"/></div>
                                     <div>I am proud to say that after a few months of
                                     taking this course...<span className="middleSpan">I passed my exam and am</span>
                                     <span style={{fontSize:"14px",fontWeight:"800"}}>now an AWS Certified Cloud Practitioner!</span>
@@ -125,13 +125,13 @@ import { useEffect, useState } from "react";
                                         </div>
                                     </div>
                                     <div className="playFlexs">
-                                    <img className="playButton" src={img11}/>
+                                    <img className="playButton" src={img11} alt="Not Fond" />
                                     <span >[NEW] Ultimate AWS Certified Cloud Practitioner</span>
                                     </div>
                                 </div>
                                 <div className="learningSubchild">
                                 <div className="learningMargin">
-                                   <div className="quote"><img src={img10}/></div>
+                                   <div className="quote"><img src={img10} alt="Not Fond"/></div>
                                     <div>I am proud to say that after a few months of
                                     taking this course...<span className="middleSpan">I passed my exam and am</span>
                                     <span style={{fontSize:"14px",fontWeight:"800"}}>now an AWS Certified Cloud Practitioner!</span>
@@ -143,7 +143,7 @@ import { useEffect, useState } from "react";
                                         </div>
                                     </div>
                                     <div className="playFlexs">
-                                    <img className="playButton" src={img11}/>
+                                    <img className="playButton" src={img11} alt="Not Fond"/>
                                     <span >[NEW] Ultimate AWS Certified Cloud Practitioner</span>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ import { useEffect, useState } from "react";
                                             return(
                                                 <div  className="homeChild" key={index}> 
                                                
-                                                    <div className="homeImg"><img src={item.img}/></div>
+                                                    <div className="homeImg"><img src={item.img} alt="Not Fond"/></div>
                                                     <div className="homChild2">
                                                     <div className="homeTitle">{item.title.slice(0,45)}...</div>
                                                     <div className="homeWriter">{item.writer}</div>
@@ -177,7 +177,7 @@ import { useEffect, useState } from "react";
                                         return(
                                             <div key={index}>
                                             
-                                             <img src={item.img}/> 
+                                             <img src={item.img} alt="Not Fond"/> 
                                              <div>{item.title}</div>
                                              </div>
                                            
@@ -225,7 +225,7 @@ import { useEffect, useState } from "react";
                                     <div className="bottom_Img_First_Parent">
                                         <div className="udemy_left">
                                             <div className="child_Flex"> 
-                                            <img className="udemy_Img" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"/>
+                                            <img className="udemy_Img" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Not Fond"/>
                                             <span>business</span>
                                             </div>
                                             <ul type="disk"> Upskill your team with Udemy
@@ -237,7 +237,7 @@ import { useEffect, useState } from "react";
                                             
                                         </div>
                                         <div>
-                                            <img className="bottom_Img_First" src="https://s.udemycdn.com/home/non-student-cta/UB_Promo_800x800.jpg"/>
+                                            <img className="bottom_Img_First" src="https://s.udemycdn.com/home/non-student-cta/UB_Promo_800x800.jpg" alt="Not Fond"/>
                                         </div>
                                     </div>
                                 </div> 

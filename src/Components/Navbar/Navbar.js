@@ -108,7 +108,7 @@ export default function Navbar() {
           <img
             src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
             className="logo"
-            alt="logo"
+            alt="Not Fond"
           />
         </div>
         <div className="categoriesDiv">
