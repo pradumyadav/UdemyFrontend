@@ -52,11 +52,11 @@ import { useParams } from "react-router-dom";
                                data.filter((item)=>item.type===params.category).slice(0,5).map((item)=>{
                                 return(
                                     <div className="middle">
-                                        <img src={item.img} alt="Not Fond"/>
-                                        <div className="homeTitle">{item.title.slice(0,45)}...</div>                                      
-                                        <div className="homeWriter">{item.writer}</div>
-                                        <div className="homeRating">{item.rating}</div>
-                                        <div className="homePrice">&#8377;{item.price}</div>
+                                                    <img src={item.img} alt="Not Fond"/>
+                                                    <div className="homeTitle">{item.title.slice(0,45)}...</div>
+                                                    <div className="homeWriter">{item.writer}</div>
+                                                    <div className="homeRating">{item.rating}</div>
+                                                    <div className="homePrice">&#8377;&nbsp;{item.price}</div>
                                     </div>
                                 )
                                })
@@ -99,42 +99,86 @@ import { useParams } from "react-router-dom";
                             } */}
                         </div>
 
-                        <div>
-                            <div>
+                        <div className="all_Courses_Parent">
+                            <div className="all_Courses_subParent">
                                 <h2>All {params.category} course</h2>
-                                <div>
-                                    <div><FaExclamation /></div>
-                                    <div>Not sure? All courses have a 30-day money-back guarantee</div>
+                                <div className="all_courses_Child1">
+                                    <div style={{backgroundColor:"#252525",borderRadius:"50%",fontSize:"25px",width:"1.8rem"}}><FaExclamation  style={{color:"white"}}/></div>
+                                    <div className="all_courses_Child1_Description">Not sure? All courses have a 30-day money-back guarantee</div>
                                 </div>
-                                <div>
-                                    <div>
+                                <div className="all_courses_Child2">
+                                    <div className="all_courses_subChild1">
                                         <div>--</div>
                                         <div>Filter</div>
                                     </div>
-                                    <div>
-                                    <div>Sort by</div>
+                                    <div className="all_courses_subChild2">
+                                    <div style={{fontSize:"12px",fontWeight:"700",color:"#252525"}}>Sort by</div>
                                     <div>Most Populer</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <h1>Second data</h1>
+
+
+                            <div className="lower_Parent">
+                                <div className="lower_Parent_child">
+                                <div className="lower_Parent_left">
+                                    <div className="lower_Parent_left_Child">
+                                        <h2>Ratings</h2>
+                                        <div>
+                                        <input type="radio"></input>
+                                        <lable>⭐⭐⭐⭐⭐ 4.5 & up (8,021)</lable>
+                                      </div>
+                                        <div>
+                                        <input type="radio"></input>
+                                        <lable>⭐⭐⭐⭐⭐ 4.0 & up (10,000)</lable>
+                                        </div>
+                                        <div>
+                                        <input type="radio"></input>
+                                        <lable>⭐⭐⭐⭐⭐ 4.7 & up (10,000)</lable>
+                                        </div>
+                                        <div>
+                                        <input type="radio"></input>
+                                        <lable>⭐⭐⭐⭐⭐ 4.3 & up (9,873)</lable>
+                                        </div>
+                                        <div>
+                                        <input type="radio"></input>
+                                        <lable>⭐⭐⭐⭐⭐ 3.9 & up (8,650)</lable>
+                                        </div>
+                                        
+
+                                    </div>
+                                   
+                                </div>
+
+                                <div className="lower_Parent_Right">
                             {
                                data.filter((item)=>item.type===params.category).slice(5,13).map((item)=>{
                                 return(
-                                    <div>
-                                       <img src={item.img} alt="Not Fond"/>
-                                        <div className="homeTitle">{item.title.slice(0,45)}...</div>                                      
+                                    <div className="lower_Middle">
+                                        <div className="lower_Middle_Img_Des">
+                                        <div className="lower_Middle_Child1">
+                                       <img style={{border:"1px solid gray"}}src={item.img} alt="Not Fond"/>
+                                       </div>
+                                       <div className="lower_Middle_Child2">
+                                        <div className="businessTitle">{item.title.slice(0,45)}...</div>   
+                                        <div style={{width:"98%"}}>{item.des.slice(0,75)}..</div>                                   
                                         <div className="homeWriter">{item.writer}</div>
-                                        <div className="homeRating">{item.rating}</div>
-                                        <div className="homePrice">&#8377;{item.price}</div>
-
+                                        <div className="homePrice">{item.rating}</div>
+                                        </div>
+                                        </div>
+                                        <div className="lower_Middle_Child3_Parent">
+                                        <div className="lower_Middle_Child3">&#8377;{item.price}</div>
+                                        </div>
                                     </div>
                                 )
                                })
 
                             }
+                            </div>
+                            </div>
+                            </div>
                             </div>
                         </>
                     )

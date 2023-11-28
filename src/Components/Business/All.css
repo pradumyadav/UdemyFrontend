@@ -79,3 +79,94 @@
 .populer_Topics_p{
     border: 2px solid black;
 }
+
+.all_Courses_Parent{
+    border: 5px solid black;
+    
+}
+.all_Courses_subParent{
+    border: 3px solid rgb(125, 8, 8);
+    padding-left: 80px;
+}
+.all_courses_Child1{
+    border: 1px solid rgb(169, 167, 167);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 65px;
+}
+.all_courses_Child2{
+    border: 2px solid rgb(255, 191, 0);
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.all_courses_subChild1{
+    border: 1px solid black;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 5rem;
+    padding: 14px 0px;
+    padding-left: 10px;
+    font-weight: 900;
+    color:black;
+   
+}
+.all_courses_subChild2{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+    line-height: 30px;
+    width: 10rem;
+}
+.all_courses_Child1_Description{
+    font-weight: 800;
+}
+.lower_Parent{
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+}
+.lower_Parent_child{
+    border: 3px solid blue;
+    display: flex;
+   
+   
+}
+.lower_Parent_left{
+    border: 2px solid rgb(255, 64, 0);
+    width: 25rem;
+}
+.lower_Parent_Right{
+    border: 2px solid olivedrab;
+    width:95%;
+}
+.lower_Middle{
+    border: 3px solid rgb(165, 42, 157);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11rem; 
+}
+.businessTitle{
+    font-weight: 900;
+    font-size: 14px;
+    color:#252525;
+    padding-bottom:2px;
+   
+  
+}
+
+.lower_Middle_Img_Des{
+    display:flex;
+    gap:20px;
+}
+.lower_Parent_left_Child{
+    line-height: 35px;
+    border-bottom: 1px solid rgb(205, 204, 204);
+   
+  
+}
