@@ -104,6 +104,7 @@ export default function Navbar() {
   return (
     <div className="headerPrimary">
       <div className="left part">
+        <Link to="/">
         <div className="udemyLogo">
           <img
             src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -111,6 +112,8 @@ export default function Navbar() {
             alt="Not Fond"
           />
         </div>
+        </Link>
+        
         <div className="categoriesDiv">
           <span className="categories">Categories</span>
           <div className="sub_Parent">
