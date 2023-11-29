@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -141,7 +141,7 @@ export default function Navbar() {
       <div className="right part">
         <div className="nav_Both">
           <span className="business">Udemy Business </span>
-          <span className="teach">Teach Udemy</span>
+         <Link to="/techonudemy"><span className="teach">Teach Udemy</span></Link> 
         </div>
         <IoMdCart className="icon" />
         <div className="login button">Log In</div>
