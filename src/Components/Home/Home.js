@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
             const[data,setData]=useState([])
 
             useEffect(()=>{
-                axios.get("http://localhost:4005/api/postdata")
+                axios.get("https://udemy-backend-t47s.onrender.com/api/postdata")
                 .then((res)=>setData(res.data))
                 .catch((err)=>console.log(err))
 
