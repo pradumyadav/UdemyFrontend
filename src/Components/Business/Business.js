@@ -19,7 +19,7 @@ import { useParams } from "react-router-dom";
                     const[data,setData]=useState([])
 
                     useEffect(()=>{
-                        axios.get("https://udemy-backend-t47s.onrender.com/api/postdata")
+                        axios.get("https://udemy-backend-t47s.onrender.com/api/getdata")
                         .then((res)=>setData(res.data))
                         .catch((err)=>console.log(err))
         
