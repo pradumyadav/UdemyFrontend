@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
             const[data,setData]=useState([])
 
             useEffect(()=>{
-                axios.get("https://udemy-backend-t47s.onrender.com/api/getdata")
+                axios.get("http://localhost:4005/api/getdata")
                 .then((res)=>setData(res.data))
                 .catch((err)=>console.log(err))
 

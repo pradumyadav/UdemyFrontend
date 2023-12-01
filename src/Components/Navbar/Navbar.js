@@ -2,11 +2,39 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink ,useNavigate} from "react-router-dom";
+import { PiGlobeBold } from "react-icons/pi";
+import { logout } from "../../Store/Features/UserSlice";
+import { useSelector,useDispatch} from "react-redux";
 
 export default function Navbar() {
   const [activeCategory, setActiveCategory] = useState(null);
+  const [handleHover,setHandleHover]=useState(false)
+  const [logOut,setLogOut]=useState(false);
+  const user =useSelector((state)=>state.user) ;
+  const nav =useNavigate()
+  //  console.log(user)
+  const dispatch =useDispatch()
 
+  const handleDropDownOpen =()=>{
+    setHandleHover(true)
+  }
+
+  const handleDropDownClose =()=>{
+    setHandleHover(false)
+  }
+
+  const handleLogOut=()=>{
+      if(user){
+        setLogOut(true)
+        dispatch(logout())
+      nav("/")
+      
+      }
+      else{
+        setLogOut(false)
+      }
+  }
   const categories = [
     "Business",
     "Finance and Accounting",
@@ -24,7 +52,7 @@ export default function Navbar() {
   
     Business: [
         "Communication",
-        "Communication",
+        "Managements",
         "Business Strategy",
         "Operations",
         "Human Resources.",
@@ -126,7 +154,7 @@ export default function Navbar() {
                 {activeCategory === category && (
                   <div className="subcategories">
                     {subcategories[category]?.map((subCategory) => (
-                      <p className="subCategory" key={subCategory}>{subCategory}</p>
+                      <p className="subCategory" key={subCategory}><NavLink to={`/second/${subCategory}`}>{subCategory}</NavLink></p>
                     ))}
                   </div>
                 )}
@@ -143,13 +171,26 @@ export default function Navbar() {
       </div>
       <div className="right part">
         <div className="nav_Both">
-          <span className="business">Udemy Business </span>
+         
          <Link to="/techonudemy"><span className="teach">Teach Udemy</span></Link> 
         </div>
-        <IoMdCart className="icon" />
-        <div className="login button">Log In</div>
-        <div className="signup button">Sign up</div>
-        <div></div>
+        <Link to="/cart">
+        <IoMdCart className="icon" /></Link> <span></span>
+
+    { !user &&  (
+    <>
+    <NavLink to="/login"><div className="login button">Log In</div></NavLink>
+       <NavLink to="/register"><div className="signup button">Sign up</div></NavLink>
+    </>) }
+        <div onMouseOver={handleDropDownOpen} style={{border:"2px solid black",height:"30px",width:"30px",display:"flex",justifyContent:"center",alignItems:"center"}}><PiGlobeBold style={{height:"20px",width:"20px"}}/></div>
+
+        {user && handleHover && (
+  <button onMouseLeave={handleDropDownClose} onClick={handleLogOut}>
+    LogOut
+  </button>
+)}
+
+
       </div>
     </div>
   );
