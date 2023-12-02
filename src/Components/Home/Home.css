@@ -1,6 +1,7 @@
 .homeImage{
     display: flex;
     justify-content: center;
+    
 }
 a{
     text-decoration: none;
@@ -128,6 +129,7 @@ margin-right: 10px;
 }
 .learning{
     border: 3px solid orange;
+    background-color: #f7f9fa;
 }
 .learningChild{
 border: 3px solid yellow;
@@ -189,7 +191,26 @@ table {
     width: 100%;
    
   }
-  
+  .homeImage_Sticker{
+    position: absolute;
+   background-color: white;
+   padding-left: 2rem;
+    top:4rem;   
+    width:25rem;
+    height: 14rem;
+  }
+
+  .homeImage_Sticker p{
+    font-weight: 700;
+  }
+
+  .homeImage_Sticker button{
+    width: 7rem;
+    height: 3rem;
+    font-weight: 700;
+    color: white;
+    background-color: #252525;
+  }
   th, td {
     padding: 5px 10px;
     text-align: start;
@@ -206,6 +227,10 @@ table {
     font-size: 15px;
     border: 1px solid black;
   }
+  .home_How_Learners{
+    padding-left: 90px;
+
+  }
   .bottom_Img_First_Parent{
     display: flex;
     justify-content: center;
@@ -217,12 +242,107 @@ table {
   .child_Flex{
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
+  }
+  ul{
+    font-size: 17px;
+    
+  }
+  .business{
+    font-size:30px;
+    font-weight: 450;
+    color:rgb(174, 3, 193);
+  }
+  li{
+    line-height: 3rem;
+    font-weight: 600;
   }
   .bottom_Img_First{
     width: 400px;
   }
   .udemy_left{
     border: 2px solid rgb(113, 11, 113);
-    width: 300px;
+    width: 28rem;
     justify-content: flex-start;
+
+  }
+  .home_Down_H1{
+    width:23rem;
+    font-weight: bolder;
+    font-size: 31px;
+    color: #252525;
+  }
+.home_SubLast_Parent{
+    border: 5px solid orange;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f9fa;
+
+}
+.home_SubLast_p{
+    padding-top: 20px;
+}
+.home_SubLast_SubParent{
+    border: 3px solid black;
+    display: flex;
+    gap:8rem;
+    height: 22rem;
+}
+.home_SubLast_child1{
+    border:2px solid green;
+}
+.home_SubLast_child2{
+    border:2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_SubLast_img1{
+    width:20px;
+}
+.home_SubLast_img2{
+    width:10rem;
+}
+.home_SubLast_Read{
+    font-weight: 800;
+    text-decoration: underline;
+    color: #5624d0;
+    margin-top: 4rem;
+}
+.home_SubLast_p{
+    font-weight: 600;
+}
+
+
+  .home_Last_Parent{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top:3rem ;
+  }
+  .home_Last_SubParent{
+    border:3px solid orangered;
+    display: flex;
+  }
+  .home_Last_Child1{
+    border: 2px solid green;
+  }
+  .home_Last_Child2{
+    border: 2px solid violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_Last_P{
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+  .home_Last_Start{
+    border: 1px solid gray;
+    color: white;
+    background-color: #252525;
+    width:50%;
+    text-align: center;
+    height: 3rem;
   }

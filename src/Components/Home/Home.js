@@ -30,6 +30,11 @@ import { useEffect, useState } from "react";
                                 
                                 <div className="homeImage">
                                     <img src={img1} alt="Not Fond"/>
+                                    <div className="homeImage_Sticker">
+                                        <h2 style={{color:"#2d2f31"}}>McLaren Racing 101</h2>
+                                        <p>Ready to get up to speed on your McLaren <br/>Racing knowledge? Take the NEW course for<br/> free.</p>
+                                        <button>Enroll now</button>
+                                    </div>
                                 </div> 
                                 <div className="partners">
                                     <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
@@ -89,7 +94,7 @@ import { useEffect, useState } from "react";
                                 </div>
                                </div>
                                <div className="learning">
-                                <div>
+                                <div className="home_How_Learners">
                                     <h1>How learners like you are achieving their goals</h1>
                                 </div>
                                 <div className="learningChild">
@@ -187,28 +192,69 @@ import { useEffect, useState } from "react";
                                 </div>   
                                
                                 </div>
-                                
+
 
                                 <div className="table">                                                                  
                                     <div className="bottom_Img_First_Parent">
+                                      
                                         <div className="udemy_left">
                                             <div className="child_Flex"> 
                                             <img className="udemy_Img" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Not Fond"/>
-                                            <span>business</span>
+                                            <span className="business">business</span>
                                             </div>
-                                            <ul type="disk"> Upskill your team with Udemy
-                                            Business
+
+                                            <div>
+                                            <ul   type="disk"><h3 className="home_Down_H1">Upskill your team with Udemy Business</h3>
+                                            
                                             <li>Unlimited access to 25,000+ top Udemy courses, anytime, anywhere</li>
                                             <li>International course collection in 14 languages</li>
                                             <li>Top certifications in tech and business</li>
                                             </ul>
+
+                                            </div>
+                                            
                                             
                                         </div>
+                                        
                                         <div>
                                             <img className="bottom_Img_First" src="https://s.udemycdn.com/home/non-student-cta/UB_Promo_800x800.jpg" alt="Not Fond"/>
                                         </div>
                                     </div>
+                                </div>
+
+
+                                <div className="home_SubLast_Parent">
+                                    <div className="home_SubLast_SubParent">
+                                        <div className="home_SubLast_child1">
+                                            <div><img className="home_SubLast_img1" src={img10} alt="Not Fond"/></div>
+                                            <p className="home_SubLast_p">Thanks to Udemy Business, Booz Allen has<b>armed our <br/>workforce, specifically its</b> data scientists, with highly <br/>relevant and in-demand tech <b>skills that are enabling <br/>consultants to stay ahead</b> of big data trends and raise <br/>the bar on proficiency, skills, and competencies to  <br/>meet client demand.</p>
+                                            <div className="home_SubLast_Read">Read full story</div>
+                                        </div>
+                                        <div className="home_SubLast_child2">
+                                            <div><img className="home_SubLast_img2" src="https://s.udemycdn.com/home/ub-case-studies/James_Hemgen.jpeg" alt="Not Found" style={{borderRadius:"50%"}}/></div>
+                                            <h4>Jim Hemgen</h4>
+                                            <p>Principle</p>
+                                            <p>Booz Allen Hamilton</p>
+                                        </div>
+                                    </div>
                                 </div> 
+
+
+                                <div className="home_Last_Parent">
+                                    <div className="home_Last_SubParent">
+
+                                    <div className="home_Last_Child1">
+                                        <img src="https://s.udemycdn.com/home/non-student-cta/instructor-mobile-v3.jpg" alt="Not Found"/>
+                                    </div>
+
+                                    <div className="home_Last_Child2">
+                                        <div><h1>Become an instructor</h1></div>
+                                        <p className="home_Last_P">Instructors from around the world<br/>teach millions of learners on Udemy.We provide the<br/> tools and skills to teach what you love.</p>
+                                      <div className="home_Last_Start">Start teaching today</div> 
+                                    </div>
+
+                                    </div>
+                                </div>
                                
                         
                     </div>
