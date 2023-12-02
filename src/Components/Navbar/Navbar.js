@@ -7,6 +7,7 @@ import { PiGlobeBold } from "react-icons/pi";
 import { logout } from "../../Store/Features/UserSlice";
 import { useSelector,useDispatch} from "react-redux";
 
+
 export default function Navbar() {
   const [activeCategory, setActiveCategory] = useState(null);
   const [handleHover,setHandleHover]=useState(false)
@@ -130,6 +131,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <div className="headerPrimary">
       <div className="left part">
         <Link to="/">
@@ -193,5 +195,7 @@ export default function Navbar() {
 
       </div>
     </div>
+    
+    </>
   );
 }

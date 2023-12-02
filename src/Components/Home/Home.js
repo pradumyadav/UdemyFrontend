@@ -71,7 +71,7 @@ import { useEffect, useState } from "react";
                                 </div>
                                 <div className="middleChild">
                                     {
-                                        data.filter((item)=>item.type==="home").map((item,index)=>{
+                                        data.filter((item)=>item.type==="home").slice(0,5).map((item,index)=>{
                                             return(
                                                 <div  className="homeChild" key={index}> 
                                                
@@ -153,7 +153,7 @@ import { useEffect, useState } from "react";
                                 </div>
                                 <div className="middleChild">
                                     {
-                                        data.filter((item)=>item.type==="home").map((item,index)=>{
+                                        data.filter((item)=>item.type==="home").slice(0,5).map((item,index)=>{
                                             return(
                                                 <div  className="homeChild" key={index}> 
                                                
@@ -187,41 +187,9 @@ import { useEffect, useState } from "react";
                                 </div>   
                                
                                 </div>
-                                <div className="table">
-                                 <div className="table_Child">
-                                    <table>
-                                        <tr>
-                                         <th>Development</th>
-                                            <th> Business</th>
-                                            <th>IT and Software</th>
-                                            <th>Design</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Python</td>
-                                            <td>Finacial Analysis</td>
-                                            <td>Amazon AWS</td>
-                                            <td>Photoshop</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Web Development</td>
-                                            <td>SQL</td>
-                                            <td>Ethiical Hacking</td>
-                                            <td> Graphic Design</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Machine</td>
-                                            <td>PMP</td>
-                                            <td>Cyber Security</td>
-                                            <td>Drawing</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="tableButton" >Explore more topics</td>
-                                        </tr>
-                                    </table>
-                                    </div>
-                                    {/* <div className="button_Div">
-                                    <button className="tableButton">Explore more topics</button>
-                                    </div> */}
+                                
+
+                                <div className="table">                                                                  
                                     <div className="bottom_Img_First_Parent">
                                         <div className="udemy_left">
                                             <div className="child_Flex"> 

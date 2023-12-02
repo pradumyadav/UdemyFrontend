@@ -26,15 +26,7 @@ import { useParams } from "react-router-dom";
         
                     },[])
                    
-//                     const filter=data && data.filter((item)=>
-//                     {if(item.category===params.category){
-//                         return (
-//                             item
-//                         )
-//                     }
-//                 })
-//                 console.log(data)
-//  console.log(filter)
+//                    
                     return(
                         <>
                         <div>
@@ -86,19 +78,7 @@ import { useParams } from "react-router-dom";
 
                     {/* Populer Topics................ */}
 
-                        <div>
-                            {/* {
-                            filter[0].populerTopics.map((item)=>{
-                                console.log(item)
-                                return(
-                                    <div className="populer_Topics_Child">
-                                     <p>{item}</p>
-                                    </div>
-                                )
-                            })
-
-                            } */}
-                        </div>
+                       
 
                         <div className="all_Courses_Parent">
                             <div className="all_Courses_subParent">
@@ -155,7 +135,7 @@ import { useParams } from "react-router-dom";
 
                                 <div className="lower_Parent_Right">
                             {
-                               data.filter((item)=>item.type===params.category).slice(5,13).map((item)=>{
+                               data.filter((item)=>item.type===params.category).slice(0,8).map((item)=>{
                                 return(
                                     <div className="lower_Middle">
                                         <div className="lower_Middle_Img_Des">
