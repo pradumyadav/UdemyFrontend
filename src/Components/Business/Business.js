@@ -7,7 +7,12 @@ import { IoInfiniteOutline } from "react-icons/io5";
 import { FaExclamation } from "react-icons/fa6";
 
 import { useParams } from "react-router-dom";
-
+// const[items,setItems]=useState();
+// useEffect(()=>{
+// axios.get("http://localhost:4005/api/getdata")
+// .then((res)=>setItems(res.data))
+// .catch((err)=console.log(err))
+// },[])
 const userid = localStorage.getItem("userId");
     const handleAddToCart= async(item)=>{
         await axios.post("http://localhost:4005/cart/addToCart", {item, userid});   

@@ -1,161 +1,262 @@
+/* Navbar.css */
+
 .headerPrimary {
-    color: #3c3b37;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-    padding: 0px 10px;
-    font-size: 14px;
-    letter-spacing: normal;
-    box-shadow: 0px 1px 6px rgb(199, 198, 198);
-  }
-  
-  .headerPrimary .logo {
-    height: 32px;
-    width: 110px;
-  }
-  
-  .headerPrimary .udemyLogo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .headerPrimary .part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
- 
-  .headerPrimary .mid {
-    width: 55%;
-    position: relative;
-  }
-  
+  color: #3c3b37;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0px 10px;
+  font-size: 14px;
+  letter-spacing: normal;
+  box-shadow: 0px 1px 6px rgb(199, 198, 198);
+}
 
+.headerPrimary .logo {
+  height: 32px;
+  width: 110px;
+}
 
-  .sub_Parent{
-    border: 2px solid black;
-    position:absolute;
-    top:1rem;
-    background-color: white;
-    width:14em;
-    height: 350px;
-  }
+.headerPrimary .udemyLogo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
+.headerPrimary .part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.headerPrimary .mid {
+  width: 55%;
+  position: relative;
+}
 
-  .headerPrimary .searchBar {
-    border-radius: 50px;
-    border: 1px #64635e solid;
-    font-size: 0.9rem;
-    height: 45px;
-    width: 100%;
-    padding-left: 7%;
-  }
-  
-  .headerPrimary .searchIcon {
-    height: 48px;
-    width: 50px;
-    position: absolute;
-    left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .right{
-  
-    display: flex;   
-    gap:18px;
-    width:30rem;
-  }
-  
-  .headerPrimary .button {
-  
-    font-size: 15px;
-    font-weight: bold;
-    border: 1px solid;
-    height: 36px;
-    width: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .nav_Both{
-    display: flex;
-    gap:10px;
-
-  }
-  
-  .headerPrimary .login {
-    background-color: white;
-    color: #252525;
-    border-color: #252525;
-  }
-  
-  .headerPrimary .login:hover {
-    color: #252525;
-    border-color: #252525;
-  }
-  
-  .headerPrimary .signup {
-    background-color: #252525;
-    color: white;
-    border-color: #252525;
-  }
-  
-  .headerPrimary .signup:hover {
-    background-color: #252525;
-    border-color: #252525;
-  }
-  
-  .headerPrimary .icon {
-    font-size: 30px;
-    color: black;  
-    cursor: pointer;
-  }
-  
- 
-  .headerPrimary span {
-    cursor: pointer;
-  }
-  
-  .headerPrimary span:hover {
-    color: #0f7c90;
-  }
-  .categoriesDiv {
-    position: relative;
-  }
-
-
-  .sub_Parent{
-    display: none;
-  }
-  .categoriesDiv:hover .sub_Parent{
-    display: block;
-  }
-  .subcategories {
-    border: 2px solid black;
-    display: none;
-    position: absolute;
-    top: 0;
+.sub_Parent {
+  border: 2px solid black;
+  position: absolute;
+  top: 1rem;
   background-color: white;
-    left: 100%;
-   
-    padding: 10px;
-    width: 12rem; /* Adjust the width as needed */
-    height: 327px;
+  width: 14em;
+  height: 450px;
+}
+
+.sub_Parent p {
+  border-bottom: 1px solid gray;
+}
+
+.headerPrimary .searchBar {
+  border-radius: 50px;
+  border: 1px #64635e solid;
+  font-size: 0.9rem;
+  height: 45px;
+  width: 100%;
+  padding-left: 7%;
+}
+
+.headerPrimary .searchIcon {
+  height: 48px;
+  width: 50px;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  gap: 18px;
+  width: 30rem;
+}
+
+.headerPrimary .button {
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid;
+  height: 36px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav_Both {
+  display: flex;
+  gap: 10px;
+}
+
+.headerPrimary .login {
+  background-color: white;
+  color: #252525;
+  border-color: #252525;
+}
+
+.headerPrimary .login:hover {
+  color: #252525;
+  border-color: #252525;
+}
+
+.headerPrimary .signup {
+  background-color: #252525;
+  color: white;
+  border-color: #252525;
+}
+
+.headerPrimary .signup:hover {
+  background-color: #252525;
+  border-color: #252525;
+}
+
+.headerPrimary .icon {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.headerPrimary span {
+  cursor: pointer;
+}
+
+.headerPrimary span:hover {
+  color: #0f7c90;
+}
+
+.categoriesDiv {
+  position: relative;
+}
+
+.sub_Parent {
+  display: none;
+}
+
+.categoriesDiv:hover .sub_Parent {
+  display: block;
+}
+
+.subcategories {
+  border: 2px solid black;
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  left: 100%;
+  padding: 10px;
+  width: 12rem; /* Adjust the width as needed */
+  height: 450px;
+}
+
+.subcategories p {
+  color: #252525;
+  margin: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+.sub_Parent:hover .subcategories {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hamburger Menu Styles */
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburgerMenu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #3c3b37;
+  margin: 5px 0;
+}
+
+
+/* Navbar.css */
+
+/* Existing styles ... */
+
+@media screen and (min-width: 581px) {
+  .headerPrimary .categoriesDiv {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  .subcategories p {
-   
-    color: #252525;
-    margin: 5px 0;
+
+  .headerPrimary .right {
+    display: flex;
+    gap: 18px;
+    width: auto; /* Adjust as needed */
   }
-  
-  .sub_Parent:hover .subcategories {
+
+  .headerPrimary.menuOpen .mobileMenu {
+    display: none;
+  }
+
+  .headerPrimary .hamburgerMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .headerPrimary .hamburgerMenu {
+    display: flex;
+  }
+
+  .headerPrimary.menuOpen .mobileMenu {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 72px; /* Adjust this value based on your header height */
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 1px 6px rgb(199, 198, 198);
   }
+
+  .mobileMenu p {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .headerPrimary .searchBar {
+    display: none;
+  }
+
+  .headerPrimary .searchIcon {
+    display: flex;
+  }
+
+  .headerPrimary .sub_Parent {
+    display: block;
+    position: static;
+    border: none;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .headerPrimary .subcategories {
+    display: none;
+  }
+
+  .headerPrimary .category:hover .subcategories {
+    display: none;
+  }
+
+  .headerPrimary .category:hover > .sub_Parent {
+    display: none;
+  }
+
+  .headerPrimary .category > a {
+    padding: 0 10px;
+  }
+}
+
+

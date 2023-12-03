@@ -174,7 +174,11 @@ import { useEffect, useState } from "react";
                                         })
                                     }
                                 </div>
-                                <h2>Top Categories</h2>                               <div className="categories_Child">
+                                <div style={{paddingLeft:"80px"}}>
+                                <h2>Top Categories</h2> 
+                                </div>
+                                                          
+                                   <div className="categories_Child">
                                 <div className="categories">
                                     {
                                        data.filter((item)=>item.type==="categories") 
