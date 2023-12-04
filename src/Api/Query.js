@@ -2,7 +2,7 @@ import {createApi,fetchBaseQuery} from "@reduxjs/toolkit/query/react"
 
 export const AppApi = createApi({
     reducerPath:"AppApi",
-    baseQuery:fetchBaseQuery({baseUrl:"http://localhost:4005"}),
+    baseQuery:fetchBaseQuery({baseUrl:"https://udemy-backend-t47s.onrender.com"}),
     endpoints:(builder)=>({
         register:builder.mutation({
             query:(user)=>({

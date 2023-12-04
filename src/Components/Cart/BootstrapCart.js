@@ -39,7 +39,7 @@ export default function CartCheckout() {
 
     const handleClick= async(itemid)=>{
         
-       await axios.post("http://localhost:4005/api/remove",{id:itemid})
+       await axios.post("https://udemy-backend-t47s.onrender.com/api/remove",{id:itemid})
         
     }
     useEffect(() => {
@@ -64,16 +64,16 @@ export default function CartCheckout() {
       "Content-Type": "application/json",
     };
     const response = await fetch(
-      "http://localhost:4005/out/create-checkout-session",
+      "https://udemy-backend-t47s.onrender.com/out/create-checkout-session",
       {
         method: "POST",
         headers: headers,
         body: JSON.stringify(body),
       }
     );
-    await axios.post("http://localhost:4005/api/postlearn",cartItems)
+    await axios.post("https://udemy-backend-t47s.onrender.com/api/postlearn",cartItems)
 
-    await axios.delete("http://localhost:4005/api/delete")
+    await axios.delete("https://udemy-backend-t47s.onrender.com/api/delete")
 
     const session = await response.json();
     const result = stripe.redirectToCheckout({

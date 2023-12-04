@@ -36,7 +36,7 @@ function Business() {
           }
 
           else{
-            await axios.post("http://localhost:4005/cart/addToCart", item);   
+            await axios.post("https://udemy-backend-t47s.onrender.com/cart/addToCart", item);   
           }
           
         }
@@ -44,7 +44,7 @@ function Business() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4005/api/getdata")
+      .get("https://udemy-backend-t47s.onrender.com/api/getdata")
       .then((res) => setData(res.data))
 
       .catch((err) => console.log(err));

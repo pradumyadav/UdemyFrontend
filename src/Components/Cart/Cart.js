@@ -9,7 +9,7 @@ function Cart() {
     console.log(userId);
     useEffect(() => {
         axios
-          .post("http://localhost:4005/cart/fetchCartByUser", {userId})
+          .post("https://udemy-backend-t47s.onrender.com/cart/fetchCartByUser", {userId})
           .then((res) => setCartItems(res.data))
           .catch((err) => console.log(err));
       }, []);

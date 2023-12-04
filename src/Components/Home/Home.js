@@ -20,7 +20,7 @@ import Footer from "../Footer/Footer";
             const[data,setData]=useState([])
 
             useEffect(()=>{
-                axios.get("http://localhost:4005/api/getdata")
+                axios.get("https://udemy-backend-t47s.onrender.com/api/getdata")
                 .then((res)=>setData(res.data))
                 .catch((err)=>console.log(err))
 

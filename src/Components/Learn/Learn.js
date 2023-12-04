@@ -6,7 +6,7 @@ import "./Learn.css"
        export default function Learn (){
             const[data,setData]=useState()
             useEffect(()=>{
-               axios.get("http://localhost:4005/api/getlearn")
+               axios.get("https://udemy-backend-t47s.onrender.com/api/getlearn")
                 .then((res)=>setData(res.data))
                 .catch((err)=>console.log(err))
             },[])

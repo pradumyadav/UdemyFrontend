@@ -109,13 +109,13 @@ export default function Navbar() {
 
   const ourSearchShow=()=>{
     setSearchData("")
-    console.log(search)
+    
 }
 
   useEffect(() => {
 
   
-      axios.get(`http://localhost:4005/api/search?type=${searchData}`)
+      axios.get(`https://udemy-backend-t47s.onrender.com/api/search?type=${searchData}`)
         .then((response) =>setSearch(response.data))
         .catch((error) => {console.error("Error fetching search results:", error);});
     

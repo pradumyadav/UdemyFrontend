@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL:'http://localhost:4005'
+    baseURL:'https://udemy-backend-t47s.onrender.com'
 })
 
 export default instance

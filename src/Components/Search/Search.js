@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 export default function Search() {
   const location= useLocation()
   const data= location.state
-  console.log(data)
+
 
   return (
     <div>
