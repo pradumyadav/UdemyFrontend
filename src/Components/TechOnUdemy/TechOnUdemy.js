@@ -1,5 +1,6 @@
 
 
+import Footer from "../Footer/Footer"
 import "./Tech.css"
      export default  function TechOnUdemy (){
             return(
@@ -106,6 +107,7 @@ import "./Tech.css"
                         <button className="Last_Parent_Button">Get started</button>
                     </div>
                 </div>
+                <Footer/>
               </div>
             )
         }

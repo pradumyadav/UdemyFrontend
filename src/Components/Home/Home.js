@@ -13,6 +13,7 @@ import img9 from "../../Assest/volkswagen.svg"
 import img10 from "../../Assest/quote.svg"
 import img11 from "../../Assest/play-button.png"
 import { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 
           export default function Home (){
 
@@ -174,7 +175,7 @@ import { useEffect, useState } from "react";
                                         })
                                     }
                                 </div>
-                                <div style={{paddingLeft:"80px"}}>
+                                <div style={{paddingLeft:"80px",marginTop:"15px"}}>
                                 <h2>Top Categories</h2> 
                                 </div>
                                                           
@@ -260,7 +261,7 @@ import { useEffect, useState } from "react";
                                     </div>
                                 </div>
                                
-                        
+                        <Footer/>
                     </div>
                 )
             }

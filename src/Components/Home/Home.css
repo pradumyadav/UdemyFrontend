@@ -4,7 +4,7 @@ a{
 }
 
 .partners{
-    border: 2px solid red;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +14,18 @@ a{
 
 }
 .imgParent{
-border: 3px solid green;
+
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 width: 90%;
 }
-.imgParent  img {
+/* .imgParent  img {
     border: 2px solid black;
   
-}.data_Driven_Parent{
+} */
+.data_Driven_Parent{
     padding-left: 110px;
 }
 .data_Driven{
@@ -33,10 +34,10 @@ width: 90%;
 .partners_Parent{
     padding-left: 80px;
 }
-.belowPartners{
+/* .belowPartners{
     border: 3px solid orange;
     
-}
+} */
 
 .belowPartners span{
     margin-right: 20px;
@@ -48,18 +49,19 @@ width: 90%;
     color: black;
 }
 .middleParent{
-    border :5px solid black;
+
     display: flex;
     flex-direction: column;
   
 }
 .middleChild{
-    border: 4px solid rgb(113, 11, 113);
+  
     display: flex;
     flex-wrap: wrap;  
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
+    margin-top: 15px;
 }
 .home_Button{
     width:150px;
@@ -73,7 +75,7 @@ width: 90%;
     height: 250px;
 }
 .homChild2{ 
-    border: 2px solid green;
+   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -85,7 +87,7 @@ width: 90%;
     color:#252525;
     padding-bottom:2px;
     width:230px;
-    border: 2px solid red;
+   
 }
 .homeRating{
     font-weight: 900;
@@ -102,7 +104,7 @@ width: 90%;
     color:#252525;
 }
 .waASpan{
-    border: 2px solid black;
+  
     width: 90%;
     margin-top: 50px;
 }
@@ -124,23 +126,23 @@ margin-right: 10px;
     font-weight: 800;
 }
 .learning{
-    border: 3px solid orange;
+
     background-color: #f7f9fa;
 }
 .learningChild{
-border: 3px solid yellow;
+
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 }
 .learningSubchild{
-    border: 3px solid rgb(132, 0, 255);
+   
     width:400px;
     margin-right: 30px;
 }
 .learningMargin{
-    border:3px solid chartreuse;
+
     width: 90%;
     margin-left: 25px;
     height: 235px;
@@ -149,7 +151,7 @@ align-items: center;
     width:37px;
 }
 .playFlexs{
-    border: 2px solid red;
+ 
     display: flex;
     margin:15px 0px;
     justify-content: center;
@@ -174,7 +176,7 @@ align-items: center;
     justify-content: center;
 }
 .table{
-    border: 3px solid darkorange;
+  
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -220,9 +222,9 @@ table {
     font-weight:700 ;
 
   }
-  .table_Child{
+  /* .table_Child{
     border:4px solid peru;
-  }
+  } */
  
   .tableButton{
     width:20%;
@@ -232,6 +234,7 @@ table {
   }
   .home_How_Learners{
     padding-left: 90px;
+    margin-top: 20px;
 
   }
   .bottom_Img_First_Parent{
@@ -264,7 +267,7 @@ table {
     width: 400px;
   }
   .udemy_left{
-    border: 2px solid rgb(113, 11, 113);
+    
     width: 28rem;
     justify-content: flex-start;
 
@@ -276,7 +279,7 @@ table {
     color: #252525;
   }
 .home_SubLast_Parent{
-    border: 5px solid orange;
+    
     display: flex;
     justify-content: center;
     background-color: #f7f9fa;
@@ -286,16 +289,16 @@ table {
     padding-top: 20px;
 }
 .home_SubLast_SubParent{
-    border: 3px solid black;
+   
     display: flex;
     gap:8rem;
     height: 22rem;
 }
-.home_SubLast_child1{
+/* .home_SubLast_child1{
     border:2px solid green;
-}
+} */
 .home_SubLast_child2{
-    border:2px solid blue;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,20 +321,20 @@ table {
 
 
   .home_Last_Parent{
-    border: 5px solid black;
+   
     display: flex;
     justify-content: center;
     margin-top:3rem ;
   }
   .home_Last_SubParent{
-    border:3px solid orangered;
+
     display: flex;
   }
-  .home_Last_Child1{
+  /* .home_Last_Child1{
     border: 2px solid green;
-  }
+  } */
   .home_Last_Child2{
-    border: 2px solid violet;
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
