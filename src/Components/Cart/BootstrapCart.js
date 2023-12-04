@@ -7,7 +7,7 @@ import {
   MDBCol,
   MDBContainer,
   MDBIcon,
-  MDBInput,
+ 
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
@@ -19,26 +19,35 @@ export default function CartCheckout() {
   const nav = useNavigate();
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
-  const userId = localStorage.getItem("userId");
-//   console.log(userId);
-  useEffect(() => {
-    axios
-      .post("http://localhost:4005/cart/fetchCartByUser", { userId })
-      .then((res) => setCartItems(res.data))
-      .catch((err) => console.log(err));
-  }, []);
+  // const userId = localStorage.getItem("userId");
+
+
+  
 
   useEffect(() => {
     let value = 0;
     cartItems.map((d) => {
-      value += d.item.price;
+      value += d.price;
     });
     setTotal(value);
   }, [cartItems]);
 
-    const learn= cartItems.map((item)=>item.item)
-  //Payment integration.....
-console.log(learn)
+    // const learn= cartItems.map((item)=>item.item)
+
+
+    const handleClick= async(itemid)=>{
+        
+       await axios.post("http://localhost:4005/api/remove",{id:itemid})
+        
+    }
+    useEffect(() => {
+      axios
+        .get("http://localhost:4005/cart/cartfind")
+        .then((res) => setCartItems(res.data))
+        .catch((err) => console.log(err));
+    }, [handleClick]);
+  // Payment integration.....
+
     
   const makePayment = async () => {
    
@@ -60,6 +69,10 @@ console.log(learn)
         body: JSON.stringify(body),
       }
     );
+    await axios.post("http://localhost:4005/api/postlearn",cartItems)
+
+    await axios.delete("http://localhost:4005/api/delete")
+
     const session = await response.json();
     const result = stripe.redirectToCheckout({
       sessionId: session.id,
@@ -67,19 +80,9 @@ console.log(learn)
     if (result.error) {
       console.log(result.error);
     }
+   
   };
-//   useEffect(()=>{
-//     axios.post("http://localhost:4005/api/postlearn",learn)
-//    .then((res)=>console.log("Successfully"))
-//     .catch((err)=>console.log(err))
-// },[makePayment])
 
-// useEffect(()=>{
-//     axios.delete("http://localhost:4005/api/delete")
-//     .then((res)=>console.log("Successfully"))
-//     .catch((err)=>console.log(err))
-
-// },[makePayment])
   return (
     <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
       <MDBContainer className="h-100 py-5">
@@ -100,7 +103,7 @@ console.log(learn)
                       <div className="d-flex align-items-center mb-5">
                         <div className="flex-shrink-0">
                           <MDBCardImage
-                            src={course.item.img}
+                            src={course.img}
                             fluid
                             style={{
                               width: "23rem",
@@ -116,18 +119,23 @@ console.log(learn)
                             <MDBIcon fas icon="times" />
                           </a>
                           <MDBTypography tag="h5" className="text-primary">
-                            {course.item.title}
+                            {course.title}
                           </MDBTypography>
                           <MDBTypography tag="h6" style={{ color: "#9e9e9e" }}>
-                            {course.item.des}
+                            {course.des}
                           </MDBTypography>
 
                           <div className="d-flex align-items-center">
                             <p className="fw-bold mb-0 me-5 pe-3">
-                              {course.item.price}
+                              {course.price}
+                             
+                              <button onClick={()=>handleClick(course.id)}>Remove</button>
                             </p>
+                           
                           </div>
+                         
                         </div>
+                      
                       </div>
                     ))}
 

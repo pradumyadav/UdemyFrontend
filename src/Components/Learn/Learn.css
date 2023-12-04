@@ -1,0 +1,13 @@
+
+
+.Learn_data{
+    display: flex;
+    justify-content: center;
+}
+
+.Learn_data_Child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+}

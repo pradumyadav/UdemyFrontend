@@ -11,6 +11,7 @@ import { FaExclamation } from "react-icons/fa6";
 
 
 import { useParams } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 
                function SubCategory (){
@@ -161,6 +162,7 @@ import { useParams } from "react-router-dom";
                             </div>
                             </div>
                             </div>
+                            <Footer/>
                         </>
                     )
                 }

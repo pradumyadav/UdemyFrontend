@@ -38,10 +38,11 @@
 .sub_Parent {
   border: 2px solid black;
   position: absolute;
-  top: 1rem;
+  top: 3rem;
   background-color: white;
   width: 14em;
   height: 450px;
+  z-index: 10;
 }
 
 .sub_Parent p {
@@ -128,6 +129,11 @@
 
 .categoriesDiv {
   position: relative;
+  border: 2px solid red;
+  height:10px;
+  height:50px;
+  padding-top: 10px;
+  z-index:20;
 }
 
 .sub_Parent {
@@ -145,10 +151,10 @@
   top: 0;
   background-color: white;
   left: 100%;
-  padding: 10px;
-  width: 12rem; /* Adjust the width as needed */
+  padding: 10px; 
+   width: 12rem; 
   height: 450px;
-}
+} 
 
 .subcategories p {
   color: #252525;
@@ -177,11 +183,12 @@
 }
 
 
-/* Navbar.css */
 
-/* Existing styles ... */
 
-@media screen and (min-width: 581px) {
+@media screen and (max-width: 580px) {
+  /* .headerPrimary .hamburgerMenu {
+    display: flex;
+  }
   .headerPrimary .categoriesDiv {
     position: static;
     display: flex;
@@ -192,7 +199,7 @@
   .headerPrimary .right {
     display: flex;
     gap: 18px;
-    width: auto; /* Adjust as needed */
+    width: auto; 
   }
 
   .headerPrimary.menuOpen .mobileMenu {
@@ -201,19 +208,13 @@
 
   .headerPrimary .hamburgerMenu {
     display: none;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .headerPrimary .hamburgerMenu {
-    display: flex;
   }
 
   .headerPrimary.menuOpen .mobileMenu {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 72px; /* Adjust this value based on your header height */
+    top: 72px; 
     left: 0;
     right: 0;
     background-color: white;
@@ -257,6 +258,81 @@
   .headerPrimary .category > a {
     padding: 0 10px;
   }
+ 
+ .button{
+  display: none;
+ }
+ .signupbutton{
+  display: none;
+ } */
+ .homeImage_Sticker{
+  display: none;
+
+ }
+ .nav_Both{
+  display: none;
+ }
+ .headerPrimary .login{
+  display:none;
+ }
+ .headerPrimary .signup{
+  display:none;
+ }
+ .headerPrimary span{
+  display:none;
+ }
+ .homeImage img{
+  width:60vw;
+  height: auto;
+ }
+ .headerPrimary .searchBar{
+ 
+ }
+ .home_Last_SubParent{
+  flex-direction: column;
+ }
+ .home_Last_Child1 img{
+    width:70%
+ }
+ .hamburgerMenu {
+  display:block;
+  flex-direction: column;
+  cursor: pointer;
 }
+.headerPrimary.menuOpen .mobileMenu {
+  display: none;
+}
+.headerPrimary.menuOpen .mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 72px; 
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 1px 6px rgb(199, 198, 198);
+  z-index:10;
+}
+
+/* .mobileMenu p {
+  margin: 0;
+  padding: 10px;
+} */
+.categoriesDiv {
+  display: none;
+}
+/* .subcategories{
+  display: block;
+  z-index:20;
+  left:0%
+} */
+
+ /* .homeImage{
+  width:40vw
+ } */
+ /* .categoriesDiv{
+  display: none;
+ } */
+} 
 
 

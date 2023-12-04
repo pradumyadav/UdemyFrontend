@@ -12,9 +12,9 @@ import Register from '../UserLoginRegister/Register'
 import Login from '../UserLoginRegister/Login'
 import SubCategory from '../Business/SubCategory'
 import { useSelector } from 'react-redux'
-import Cart from "../Cart/Cart";
-import { FaBootstrap } from 'react-icons/fa6'
+
 import CartCheckout from '../Cart/BootstrapCart'
+import Learn from '../Learn/Learn'
             
            const Router = () => {
             const user =useSelector((state)=>state.user)
@@ -39,6 +39,7 @@ import CartCheckout from '../Cart/BootstrapCart'
                     <Route path="/first/:category" element ={<Business/>}/>
                     <Route path="/second/:category" element={<SubCategory/>}></Route>
                     <Route path ="/cart" element={<CartCheckout/>}/>
+                    <Route path="/learn" element={<Learn/>}></Route>
                    
                     </Routes>
                     

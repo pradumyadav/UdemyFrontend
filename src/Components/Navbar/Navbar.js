@@ -151,21 +151,24 @@ export default function Navbar() {
 
         <div className="right part">
           <div className="nav_Both">
+          <Link to="/learn">
+              <span className="teach">learn Udemy</span>
+            </Link>
             <Link to="/techonudemy">
               <span className="teach">Teach Udemy</span>
             </Link>
           </div>
           <Link to="/cart">
-            <IoMdCart className="icon" />
+            <IoMdCart className="icon" /><span></span>
           </Link>
 
           {!user && (
             <>
               <NavLink to="/login">
-                <div className="login button">Log In</div>
+                <div className="login button loginbutton">Log In</div>
               </NavLink>
               <NavLink to="/register">
-                <div className="signup button">Sign up</div>
+                <div className="signup button signupbutton">Sign up</div>
               </NavLink>
             </>
           )}

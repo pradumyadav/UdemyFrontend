@@ -1,8 +1,4 @@
-.homeImage{
-    display: flex;
-    justify-content: center;
-    
-}
+
 a{
     text-decoration: none;
 }
@@ -191,13 +187,20 @@ table {
     width: 100%;
    
   }
+  .homeImage{
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
   .homeImage_Sticker{
     position: absolute;
    background-color: white;
    padding-left: 2rem;
-    top:4rem;   
+    top:6rem;   
+    left: 10rem;
     width:25rem;
     height: 14rem;
+
   }
 
   .homeImage_Sticker p{
