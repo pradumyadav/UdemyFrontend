@@ -1,5 +1,5 @@
 // Navbar.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
@@ -7,6 +7,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { PiGlobeBold } from "react-icons/pi";
 import { logout } from "../../Store/Features/UserSlice";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
 
 export default function Navbar() {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -98,7 +99,30 @@ export default function Navbar() {
   const handleCategoryHover = (category) => {
     setActiveCategory(category);
   };
+  const [searchData,setSearchData]=useState()
+  const handleSearch= (e)=>{
+    setSearchData(e.target.value)
 
+  }
+  console.log(searchData)
+  const [search, setSearch] = useState("");
+
+  const ourSearchShow=()=>{
+    setSearchData("")
+    console.log(search)
+}
+
+  useEffect(() => {
+
+  
+      axios.get(`http://localhost:4005/api/search?type=${searchData}`)
+        .then((response) =>setSearch(response.data))
+        .catch((error) => {console.error("Error fetching search results:", error);});
+    
+  }, [searchData,nav]);
+
+    
+ 
   return (
     <>
       <div className={`headerPrimary ${isMenuOpen ? "menuOpen" : ""}`}>
@@ -144,9 +168,12 @@ export default function Navbar() {
 
         <div className="mid part">
           <div className="searchIcon">
-            <IoSearchOutline className="icon" />
+            <Link to="/search" state={search}>
+            <IoSearchOutline className="icon"  onClick={ourSearchShow }/>
+            </Link>
+            
           </div>
-          <input className="searchBar" placeholder="Search for anything" />
+          <input className="searchBar" placeholder="Search for anything" onChange={handleSearch}/>
         </div>
 
         <div className="right part">

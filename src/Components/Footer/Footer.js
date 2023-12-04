@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./Footer.css"
 import { PiGlobeBold } from "react-icons/pi";
      export default  function Footer (){
@@ -20,7 +21,7 @@ import { PiGlobeBold } from "react-icons/pi";
                         <div className="F_2_Child1">
                         <div>
                         <div>Udemy Business</div>
-                        <div>Tech on Udemy</div>
+                        <Link to="/techonudemy"><div style={{color:"white"}}>Tech on Udemy</div></Link>
                         <div> Get the app</div>
                         <div>About us</div>
                         <div>Contact us</div>

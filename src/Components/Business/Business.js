@@ -656,15 +656,7 @@ function Business() {
                     }
                   </div>
                 </div>
-                {/* {
-            img:"https://img-c.udemycdn.com/user/75x75/16912784_49c6_3.jpg",
-            title:"Sandra 11Percent",
-            des:"German Language, Presentation Skills",
-            rating:4.7,
-            totalStudent:"110,054",
-            courseNumber:7,
-            category:"Teaching & Academic"
-        }, */}
+               
 
         <div className="all_Courses_Parent">
           <div className="all_Courses_subParent">

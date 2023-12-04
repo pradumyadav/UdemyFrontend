@@ -15,6 +15,7 @@ import { useSelector } from 'react-redux'
 
 import CartCheckout from '../Cart/BootstrapCart'
 import Learn from '../Learn/Learn'
+import Search from '../Search/Search'
             
            const Router = () => {
             const user =useSelector((state)=>state.user)
@@ -40,6 +41,7 @@ import Learn from '../Learn/Learn'
                     <Route path="/second/:category" element={<SubCategory/>}></Route>
                     <Route path ="/cart" element={<CartCheckout/>}/>
                     <Route path="/learn" element={<Learn/>}></Route>
+                    <Route path="/search" element={<Search/>}></Route>
                    
                     </Routes>
                     
