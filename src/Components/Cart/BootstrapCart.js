@@ -27,12 +27,14 @@ export default function CartCheckout() {
   useEffect(() => {
     let value = 0;
     cartItems.map((d) => {
-      value += d.price;
+      return(
+        value += d.price
+      )
+      
     });
     setTotal(value);
   }, [cartItems]);
 
-    // const learn= cartItems.map((item)=>item.item)
 
 
     const handleClick= async(itemid)=>{
@@ -45,7 +47,7 @@ export default function CartCheckout() {
         .get("http://localhost:4005/cart/cartfind")
         .then((res) => setCartItems(res.data))
         .catch((err) => console.log(err));
-    }, [handleClick]);
+    },);
   // Payment integration.....
 
     
