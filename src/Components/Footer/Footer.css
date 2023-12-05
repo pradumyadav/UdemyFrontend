@@ -1,5 +1,5 @@
 .F_1_Parent{
-border: 3px solid red;
+
 display: flex;
 justify-content: space-between;
 padding-left: 4rem;
@@ -7,7 +7,7 @@ padding-left: 4rem;
    background-color: #1c1d1f;
 }
 .F_1_Child1{
-border: 2px solid green;
+
 color: white;
 background-color: #1c1d1f;
 display: flex;
@@ -18,7 +18,7 @@ font-size: 17px;
 justify-content: center;
 }
 .F_1_Child2{
-    border:2px solid rgb(34, 0, 255);
+   
     display: flex;
     gap:2rem;
 }
@@ -77,7 +77,7 @@ nav{
 
 @media screen and (max-width:580px){
     .F_1_Child1{
-        border: 2px solid green;
+        
         color: white;
         background-color: #1c1d1f;
         display: flex;
@@ -100,7 +100,7 @@ nav{
             
         }
     .F_1_Parent{
-        border: 3px solid red;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -109,7 +109,7 @@ nav{
            background-color: #1c1d1f;
         }
         .F_1_Child2{
-            border:2px solid rgb(34, 0, 255);
+         
             display: flex;
           flex-wrap: wrap;
             gap:0.5rem;
@@ -150,7 +150,7 @@ nav{
 }
 @media screen and (min-width:581px) and (max-width:825px){
     .F_1_Child1{
-        border: 2px solid green;
+    
         color: white;
         background-color: #1c1d1f;
         display: flex;
@@ -173,7 +173,7 @@ nav{
             
         }
     .F_1_Parent{
-        border: 3px solid red;
+      
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -182,7 +182,7 @@ nav{
            background-color: #1c1d1f;
         }
         .F_1_Child2{
-            border:2px solid rgb(34, 0, 255);
+          
             display: flex;
             justify-content: center;
           flex-wrap: wrap;
@@ -218,7 +218,5 @@ nav{
             height: 32px;
             width: 110px;
         }
-        /* .F_1_Child2 img{
-            width:4rem;
-        } */
+       
 }   

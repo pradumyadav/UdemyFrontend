@@ -1,11 +1,9 @@
 .T_1{
-    border: 4px solid black;
+  
     display: flex;
     justify-content: center;
 }
-.T_2{
-    border: 4px solid rgb(139, 31, 31);
-}
+
 .main_h1{
     color: #2d2f31;
 }
@@ -27,7 +25,7 @@
     color: black;
 }
 .middle{
-    border: 3px solid orange;
+   
     height:300px;
 }
 .show_data_1{
@@ -45,7 +43,7 @@
    
 }
 .m_Icons{
-    border: 2px solid brown;
+   
     background-color: rgb(196, 196, 196);
     border-radius: 50%;
     font-size: 2rem;
@@ -53,13 +51,13 @@
 
 }
 .m_description{
-    border: 2px solid salmon;
+   
     font-weight: 800;
     width: 20rem;
    
 }
 .m_2{
-    border: 2px solid rgb(165, 42, 157);
+  
     display: flex;
     height: 5rem;
     justify-content: center;
@@ -68,24 +66,18 @@
     
 }
 .populer_Topics_Parent{
-    border: 3px solid red;
+
     display: flex;
     justify-content: space-around;
 }
 
-.populer_Topics_Child{
-    border: 3px solid rgb(43, 0, 255);
-}
-.populer_Topics_p{
-    border: 2px solid black;
-}
 
 .all_Courses_Parent{
-    border: 5px solid black;
+  
     margin-top: 3.7rem;
 }
 .all_Courses_subParent{
-    border: 3px solid rgb(125, 8, 8);
+   
     padding-left: 80px;
 }
 .all_courses_Child1{
@@ -96,7 +88,7 @@
     height: 65px;
 }
 .all_courses_Child2{
-    border: 2px solid rgb(255, 191, 0);
+  
     display: flex;
     gap: 15px;
     margin-top: 20px;
@@ -126,26 +118,26 @@
     font-weight: 800;
 }
 .lower_Parent{
-    border: 5px solid red;
+  
     display: flex;
     justify-content: center;
 }
 .lower_Parent_child{
-    border: 3px solid blue;
+   
     display: flex;
    
    
 }
 .lower_Parent_left{
-    border: 2px solid rgb(255, 64, 0);
+   
     width: 25rem;
 }
 .lower_Parent_Right{
-    border: 2px solid olivedrab;
+ 
     width:95%;
 }
 .lower_Middle{
-    border: 3px solid rgb(165, 42, 157);
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,13 +164,13 @@
   
 }
 .populerTopics_Parent{
-    border: 5px solid black;
+ 
     display: flex;
     justify-content:center;
   
 }
 .populerTopics_Subparent{
-        border: 4px solid green;
+      
         display: flex;
         gap:20px;
         flex-wrap: wrap;
@@ -196,7 +188,7 @@
     align-items: center;
 }
 .teachers_Parent{
-    border: 5px solid orange;
+  
     display: flex;
   
     justify-content: center;
@@ -205,7 +197,7 @@
     width:80%;
 }
 .teachers_SubParent{
-    border: 2px solid rgb(21, 0, 255);
+  
     display: flex;
     
     width: 90%;
@@ -222,16 +214,13 @@
 
 @media screen and (max-width:580px){
     .T_1{
-        border: 4px solid black;
+       
         display: flex;
       
         justify-content: center;
       
     }
-    .T_2{
-        border: 4px solid rgb(139, 31, 31);
-       
-    }
+    
     .main_h1{
         color: #2d2f31;
     }
@@ -253,7 +242,7 @@
         color: black;
     }
     .middle{
-        border: 3px solid orange;
+   
         height:300px;
     }
     .show_data_1{
@@ -272,7 +261,7 @@
        
     }
     .m_Icons{
-        border: 2px solid brown;
+       
         background-color: rgb(196, 196, 196);
         border-radius: 50%;
         font-size: 2rem;
@@ -280,13 +269,13 @@
     
     }
     .m_description{
-        border: 2px solid salmon;
+      
         font-weight: 800;
         width: 20rem;
        
     }
     .m_2{
-        border: 2px solid rgb(165, 42, 157);
+        
         display: flex;
         height: 5rem;
         justify-content: center;
@@ -295,24 +284,18 @@
         
     }
     .populer_Topics_Parent{
-        border: 3px solid red;
+      
         display: flex;
         justify-content: space-around;
     }
-    
-    .populer_Topics_Child{
-        border: 3px solid rgb(43, 0, 255);
-    }
-    .populer_Topics_p{
-        border: 2px solid black;
-    }
-    
+  
+   
     .all_Courses_Parent{
-        border: 5px solid black;
+      
         margin-top: 3.7rem;
     }
     .all_Courses_subParent{
-        border: 3px solid rgb(125, 8, 8);
+       
         padding-left: 35px;
     }
     .all_courses_Child1{
@@ -323,7 +306,7 @@
         height: 65px;
     }
     .all_courses_Child2{
-        border: 2px solid rgb(255, 191, 0);
+    
         display: flex;
         gap: 15px;
         margin-top: 20px;
@@ -345,7 +328,7 @@
         display: none;
     }
     .lower_Middle_Child1{
-        border:2px solid black;
+   
         display: flex;
         align-items: center;
         justify-content: center;
@@ -370,27 +353,27 @@
         font-weight: 800;
     }
     .lower_Parent{
-        border: 5px solid red;
+     
         display: flex;
         justify-content: center;
     }
     .lower_Parent_child{
-        border: 3px solid blue;
+      
         display: flex;
        
        
     }
     .lower_Parent_left{
-        border: 2px solid rgb(255, 64, 0);
+        
         width: 25rem;
         display: none;
     }
     .lower_Parent_Right{
-        border: 2px solid olivedrab;
+       
         width:100%;
     }
     .lower_Middle{
-        border: 3px solid rgb(165, 42, 157);
+       
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -416,13 +399,13 @@
       
     }
     .populerTopics_Parent{
-        border: 5px solid black;
+        
         display: flex;
         justify-content:center;
       
     }
     .populerTopics_Subparent{
-            border: 4px solid green;
+           
             display: flex;
             gap:20px;
             flex-wrap: wrap;
@@ -440,7 +423,7 @@
         align-items: center;
     }
     .teachers_Parent{
-        border: 5px solid orange;
+      
         display: flex;
         justify-content: center;
     }
@@ -448,7 +431,7 @@
         width:80%;
     }
     .teachers_SubParent{
-        border: 2px solid rgb(21, 0, 255);
+       
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -465,16 +448,13 @@
 }
 @media screen and (min-width:581px) and (max-width:825px){
     .T_1{
-        border: 4px solid black;
+       
         display: flex;
       
         justify-content: center;
       
     }
-    .T_2{
-        border: 4px solid rgb(139, 31, 31);
-       
-    }
+   
     .main_h1{
         color: #2d2f31;
     }
@@ -496,7 +476,7 @@
         color: black;
     }
     .middle{
-        border: 3px solid orange;
+      
         height:300px;
     }
     .show_data_1{
@@ -515,7 +495,7 @@
        
     }
     .m_Icons{
-        border: 2px solid brown;
+      
         background-color: rgb(196, 196, 196);
         border-radius: 50%;
         font-size: 2rem;
@@ -523,13 +503,13 @@
     
     }
     .m_description{
-        border: 2px solid salmon;
+        
         font-weight: 800;
         width: 20rem;
        
     }
     .m_2{
-        border: 2px solid rgb(165, 42, 157);
+      
         display: flex;
         height: 5rem;
         justify-content: center;
@@ -538,24 +518,19 @@
         
     }
     .populer_Topics_Parent{
-        border: 3px solid red;
+      
         display: flex;
         justify-content: space-around;
     }
-    
-    .populer_Topics_Child{
-        border: 3px solid rgb(43, 0, 255);
-    }
-    .populer_Topics_p{
-        border: 2px solid black;
-    }
+  
+   
     
     .all_Courses_Parent{
-        border: 5px solid black;
+    
         margin-top: 3.7rem;
     }
     .all_Courses_subParent{
-        border: 3px solid rgb(125, 8, 8);
+        
         padding-left: 35px;
     }
     .all_courses_Child1{
@@ -566,7 +541,7 @@
         height: 65px;
     }
     .all_courses_Child2{
-        border: 2px solid rgb(255, 191, 0);
+    
         display: flex;
         gap: 15px;
         margin-top: 20px;
@@ -588,7 +563,7 @@
         display: none;
     }
     .lower_Middle_Child1{
-        border:2px solid black;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -613,27 +588,27 @@
         font-weight: 800;
     }
     .lower_Parent{
-        border: 5px solid red;
+   
         display: flex;
         justify-content: center;
     }
     .lower_Parent_child{
-        border: 3px solid blue;
+  
         display: flex;
        
        
     }
     .lower_Parent_left{
-        border: 2px solid rgb(255, 64, 0);
+       
         width: 25rem;
         display: none;
     }
     .lower_Parent_Right{
-        border: 2px solid olivedrab;
+      
         width:100%;
     }
     .lower_Middle{
-        border: 3px solid rgb(165, 42, 157);
+       
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -659,13 +634,13 @@
       
     }
     .populerTopics_Parent{
-        border: 5px solid black;
+      
         display: flex;
         justify-content:center;
       
     }
     .populerTopics_Subparent{
-            border: 4px solid green;
+           
             display: flex;
             gap:20px;
             flex-wrap: wrap;
@@ -683,7 +658,7 @@
         align-items: center;
     }
     .teachers_Parent{
-        border: 5px solid orange;
+      
         display: flex;
         justify-content: center;
     }
@@ -691,7 +666,7 @@
         width:80%;
     }
     .teachers_SubParent{
-        border: 2px solid rgb(21, 0, 255);
+   
         display: flex;
         flex-direction: column;
         width: 90%;

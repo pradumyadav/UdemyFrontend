@@ -208,14 +208,12 @@ export default function Navbar() {
           </div>
 
           {user && handleHover && (
-            <div className="hoverLogout">
-                <div><h2>Hello</h2></div>
-                <div>Every One</div>
+           
                 <button onMouseLeave={handleDropDownClose} onClick={handleLogOut}>
               LogOut
             </button>
 
-            </div>
+          
             
           )}
         </div>
