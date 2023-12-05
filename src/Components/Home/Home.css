@@ -332,6 +332,7 @@ table {
   .home_Last_SubParent{
     border:3px solid orangered;
     display: flex;
+    width:70%
   }
   .home_Last_Child1{
     border: 2px solid green;

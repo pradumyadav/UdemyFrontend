@@ -59,6 +59,7 @@ import Footer from "../Footer/Footer";
                                         <button>Enroll now</button>
                                     </div>
                                 </div> 
+                                <div className="main_Parent">
                                 <div className="partners">
                                     <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
                                     <div className="imgParent">
@@ -73,6 +74,7 @@ import Footer from "../Footer/Footer";
                                     
                                     </div>
                                 </div>
+                                
                                     <div className="partners_Parent">
                                     <div className="belowPartners">
                                     <h1 className="h1">A broad selection of courses</h1>
@@ -95,6 +97,7 @@ import Footer from "../Footer/Footer";
                                     Explore data science courses with Python, statistics, machine learning, and more to grow...
                                     </div>
                                     <button className="home_Button">Explore python</button>
+                                </div>
                                 </div>
                                 </div>
                                 <div className="middleChild">

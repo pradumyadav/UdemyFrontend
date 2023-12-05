@@ -10,13 +10,13 @@ const persistedStore = persistStore(Store)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+ 
    <Provider store={Store}>
     <PersistGate loading={<div>...loading</div>}  persistor={persistedStore}>
       <App/>
     </PersistGate>
    </Provider>
-  </React.StrictMode>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

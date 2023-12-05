@@ -104,7 +104,7 @@ export default function Navbar() {
     setSearchData(e.target.value)
 
   }
-  console.log(searchData)
+  
   const [search, setSearch] = useState("");
 
   const ourSearchShow=()=>{
@@ -208,9 +208,15 @@ export default function Navbar() {
           </div>
 
           {user && handleHover && (
-            <button onMouseLeave={handleDropDownClose} onClick={handleLogOut}>
+            <div className="hoverLogout">
+                <div><h2>Hello</h2></div>
+                <div>Every One</div>
+                <button onMouseLeave={handleDropDownClose} onClick={handleLogOut}>
               LogOut
             </button>
+
+            </div>
+            
           )}
         </div>
 
