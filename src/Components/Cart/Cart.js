@@ -4,12 +4,12 @@ import { useEffect } from 'react'
 import BootstrapCart from './BootstrapCart';
 
 function Cart() {
-    const [cartItems, setCartItems] = useState([]);
+    // const [cartItems, setCartItems] = useState([]);
     const userId = localStorage.getItem("userId");
     console.log(userId);
     useEffect(() => {
         axios
-          .post("https://udemy-backend-t47s.onrender.com/cart/fetchCartByUser", {userId})
+          .post("http://localhost:4005/cart/fetchCartByUser", {userId})
           .then((res) => setCartItems(res.data))
           .catch((err) => console.log(err));
       }, []);

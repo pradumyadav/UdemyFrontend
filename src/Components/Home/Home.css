@@ -4,7 +4,7 @@ a{
 }
 
 .partners{
-  
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,18 +14,17 @@ a{
 
 }
 .imgParent{
-
+border: 3px solid green;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 width: 90%;
 }
-/* .imgParent  img {
+.imgParent  img {
     border: 2px solid black;
   
-} */
-.data_Driven_Parent{
+}.data_Driven_Parent{
     padding-left: 110px;
 }
 .data_Driven{
@@ -34,10 +33,10 @@ width: 90%;
 .partners_Parent{
     padding-left: 80px;
 }
-/* .belowPartners{
+.belowPartners{
     border: 3px solid orange;
     
-} */
+}
 
 .belowPartners span{
     margin-right: 20px;
@@ -49,13 +48,13 @@ width: 90%;
     color: black;
 }
 .middleParent{
-
+    border :5px solid black;
     display: flex;
     flex-direction: column;
   
 }
 .middleChild{
-  
+    border: 4px solid rgb(113, 11, 113);
     display: flex;
     flex-wrap: wrap;  
     align-items: center;
@@ -75,7 +74,7 @@ width: 90%;
     height: 250px;
 }
 .homChild2{ 
-   
+    border: 2px solid green;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -87,7 +86,7 @@ width: 90%;
     color:#252525;
     padding-bottom:2px;
     width:230px;
-   
+    border: 2px solid red;
 }
 .homeRating{
     font-weight: 900;
@@ -104,7 +103,7 @@ width: 90%;
     color:#252525;
 }
 .waASpan{
-  
+    border: 2px solid black;
     width: 90%;
     margin-top: 50px;
 }
@@ -126,23 +125,23 @@ margin-right: 10px;
     font-weight: 800;
 }
 .learning{
-
+    border: 3px solid orange;
     background-color: #f7f9fa;
 }
 .learningChild{
-
+border: 3px solid yellow;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 }
 .learningSubchild{
-   
+    border: 3px solid rgb(132, 0, 255);
     width:400px;
     margin-right: 30px;
 }
 .learningMargin{
-  border: 1px solid gray;
+    border:3px solid chartreuse;
     width: 90%;
     margin-left: 25px;
     height: 235px;
@@ -151,7 +150,7 @@ align-items: center;
     width:37px;
 }
 .playFlexs{
- 
+    border: 2px solid red;
     display: flex;
     margin:15px 0px;
     justify-content: center;
@@ -176,7 +175,7 @@ align-items: center;
     justify-content: center;
 }
 .table{
-  
+    border: 3px solid darkorange;
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -222,9 +221,9 @@ table {
     font-weight:700 ;
 
   }
-  /* .table_Child{
+  .table_Child{
     border:4px solid peru;
-  } */
+  }
  
   .tableButton{
     width:20%;
@@ -267,7 +266,7 @@ table {
     width: 400px;
   }
   .udemy_left{
-    
+    border: 2px solid rgb(113, 11, 113);
     width: 28rem;
     justify-content: flex-start;
 
@@ -279,7 +278,7 @@ table {
     color: #252525;
   }
 .home_SubLast_Parent{
-    
+    border: 5px solid orange;
     display: flex;
     justify-content: center;
     background-color: #f7f9fa;
@@ -287,18 +286,22 @@ table {
 }
 .home_SubLast_p{
     padding-top: 20px;
+    width:35rem
+
 }
 .home_SubLast_SubParent{
-   
+    border: 3px solid black;
     display: flex;
-    gap:8rem;
-    height: 22rem;
+    justify-content: center;
+    
+    width:80vw;
 }
-/* .home_SubLast_child1{
+.home_SubLast_child1{
     border:2px solid green;
-} */
+   
+}
 .home_SubLast_child2{
- 
+    border:2px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,18 +324,18 @@ table {
 
 
   .home_Last_Parent{
-   
+    border: 5px solid black;
     display: flex;
     justify-content: center;
     margin-top:3rem ;
   }
   .home_Last_SubParent{
-
+    border:3px solid orangered;
     display: flex;
   }
-  /* .home_Last_Child1{
+  .home_Last_Child1{
     border: 2px solid green;
-  } */
+  }
   .home_Last_Child2{
  
     display: flex;
@@ -351,4 +354,227 @@ table {
     width:50%;
     text-align: center;
     height: 3rem;
+  }
+
+
+  @media screen and (max-width:580px){
+
+    .partners h2{
+      display: none;
+    }
+
+    .imgParent{
+      width:95%;
+    }
+
+    .partners_Parent{
+      padding-left: 10px;
+    }
+
+    .belowPartners span{
+      margin-right:10px
+    }
+
+    .data_Driven_Parent{
+      padding-left: 30px;
+    }
+
+    .home_How_Learners{
+      padding-left: 40px;
+    }
+
+   
+  .home_SubLast_SubParent{
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      flex-direction:column ;
+     
+
+
+  }
+  .bottom_Img_First{
+    width: 350px;
+  }
+    .home_SubLast_Parent{
+      border: 5px solid orange;
+      display: flex;
+   
+      justify-content: center;
+      background-color: #f7f9fa;
+  
+  }
+  .home_SubLast_p{
+      padding-top: 20px;
+      width:20rem
+  }
+ 
+  .home_SubLast_child1{
+      border:2px solid green;
+  }
+  .home_SubLast_child2{
+      border:2px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .home_SubLast_img1{
+      width:20px;
+  }
+  .home_SubLast_img2{
+      width:10rem;
+  }
+  .home_SubLast_Read{
+      font-weight: 800;
+      text-decoration: underline;
+      color: #5624d0;
+      margin-top: 4rem;
+  }
+  
+  .home_Last_Parent{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top:3rem ;
+  }
+  .home_Last_SubParent{
+    border:3px solid orangered;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .home_Last_Child1{
+    border: 2px solid green;
+  }
+  .home_Last_Child2{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_Last_P{
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+  .home_Last_Start{
+    border: 1px solid gray;
+    color: white;
+    background-color: #252525;
+    width:50%;
+    text-align: center;
+    height: 3rem;
+  }
+
+  
+  }
+  @media screen and (min-width:581px) and (max-width:825px){
+    .partners h2{
+      display: none;
+    }
+
+    .imgParent{
+      width:95%;
+    }
+
+    .partners_Parent{
+      padding-left: 10px;
+    }
+
+    .belowPartners span{
+      margin-right:10px
+    }
+
+    .data_Driven_Parent{
+      padding-left: 30px;
+    }
+
+    .home_How_Learners{
+      padding-left: 40px;
+    }
+
+   
+  .home_SubLast_SubParent{
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      flex-direction:column ;
+     
+
+
+  }
+  .bottom_Img_First{
+    width: 450px;
+  }
+    .home_SubLast_Parent{
+      border: 5px solid orange;
+      display: flex;
+   
+      justify-content: center;
+      background-color: #f7f9fa;
+  
+  }
+  .home_SubLast_p{
+      padding-top: 20px;
+      width:30rem
+  }
+ 
+  .home_SubLast_child1{
+      border:2px solid green;
+  }
+  .home_SubLast_child2{
+      border:2px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .home_SubLast_img1{
+      width:20px;
+  }
+  .home_SubLast_img2{
+      width:10rem;
+  }
+  .home_SubLast_Read{
+      font-weight: 800;
+      text-decoration: underline;
+      color: #5624d0;
+      margin-top: 4rem;
+  }
+  
+  .home_Last_Parent{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top:3rem ;
+  }
+  .home_Last_SubParent{
+    border:3px solid orangered;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .home_Last_Child1{
+    border: 2px solid green;
+    text-align: center;
+  }
+  .home_Last_Child2{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_Last_P{
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+  .home_Last_Start{
+    border: 1px solid gray;
+    color: white;
+    background-color: #252525;
+    width:50%;
+    text-align: center;
+    height: 3rem;
+  }
+
   }

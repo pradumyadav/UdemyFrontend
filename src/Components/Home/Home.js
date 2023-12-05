@@ -18,7 +18,29 @@ import Footer from "../Footer/Footer";
           export default function Home (){
 
             const[data,setData]=useState([])
-
+           
+            const [items,setItems]=useState()
+          
+            useEffect(()=>{
+              axios.get("https://udemy-backend-t47s.onrender.com/cart/cartfind")
+              .then((res)=>setItems(res.data))
+              .catch((err)=>console.log(err))
+              },[])
+              
+              // const userid = localStorage.getItem("userId");
+                  const handleAddToCart= async(item)=>{
+                    console.log(item.id)
+                    const cartData= items.find((items)=>items.id === item.id)
+                    // console.log(cartData.id)
+                    if(cartData){
+                      alert("Cart Data Matched")
+                    }
+          
+                    else{
+                      await axios.post("https://udemy-backend-t47s.onrender.com/cart/addToCart", item);   
+                    }
+                    
+                  }
             useEffect(()=>{
                 axios.get("https://udemy-backend-t47s.onrender.com/api/getdata")
                 .then((res)=>setData(res.data))
@@ -87,6 +109,7 @@ import Footer from "../Footer/Footer";
                                                     <div className="homeWriter">{item.writer}</div>
                                                     <div className="homeRating">{item.rating}</div>
                                                     <div className="homePrice">&#8377;&nbsp;{item.price}</div>
+                                                    <button onClick={() => handleAddToCart(item)}>Add to cart</button>
                                                     </div>
                                                 </div>
                                             )
@@ -169,6 +192,7 @@ import Footer from "../Footer/Footer";
                                                     <div className="homeWriter">{item.writer}</div>
                                                     <div className="homeRating">{item.rating}</div>
                                                     <div className="homePrice">&#8377;&nbsp;{item.price}</div>
+                                                    <button onClick={() => handleAddToCart(item)}>Add to cart</button>
                                                     </div>
                                                 </div>
                                             )
@@ -232,7 +256,7 @@ import Footer from "../Footer/Footer";
                                     <div className="home_SubLast_SubParent">
                                         <div className="home_SubLast_child1">
                                             <div><img className="home_SubLast_img1" src={img10} alt="Not Fond"/></div>
-                                            <p className="home_SubLast_p">Thanks to Udemy Business, Booz Allen has<b>armed our <br/>workforce, specifically its</b> data scientists, with highly <br/>relevant and in-demand tech <b>skills that are enabling <br/>consultants to stay ahead</b> of big data trends and raise <br/>the bar on proficiency, skills, and competencies to  <br/>meet client demand.</p>
+                                            <p className="home_SubLast_p">Thanks to Udemy Business, Booz Allen has armed our workforce, specifically its data scientists, with highly relevant and in-demand tech skills that are enabling consultants to stay ahead of big data trends and raise the bar on proficiency, skills, and competencies to meet client demand.</p>
                                             <div className="home_SubLast_Read">Read full story</div>
                                         </div>
                                         <div className="home_SubLast_child2">
@@ -254,7 +278,7 @@ import Footer from "../Footer/Footer";
 
                                     <div className="home_Last_Child2">
                                         <div><h1>Become an instructor</h1></div>
-                                        <p className="home_Last_P">Instructors from around the world<br/>teach millions of learners on Udemy.We provide the<br/> tools and skills to teach what you love.</p>
+                                        <p className="home_Last_P">Instructors from around the world teach millions of learners on Udemy.We provide the tools and skills to teach what you love.</p>
                                       <div className="home_Last_Start">Start teaching today</div> 
                                     </div>
 

@@ -21,7 +21,7 @@ function Business() {
   const [items,setItems]=useState()
 
   useEffect(()=>{
-    axios.get("http://localhost:4005/cart/cartfind")
+    axios.get("https://udemy-backend-t47s.onrender.com/cart/cartfind")
     .then((res)=>setItems(res.data))
     .catch((err)=>console.log(err))
     },[])
@@ -660,7 +660,7 @@ function Business() {
 
         <div className="all_Courses_Parent">
           <div className="all_Courses_subParent">
-            <h2>All {params.category} course</h2>
+            <h2 className="Which_Course">All {params.category} course</h2>
             <div className="all_courses_Child1">
               <div
                 style={{
@@ -749,6 +749,7 @@ function Business() {
                           </div>
                           <div className="homeWriter">{item.writer}</div>
                           <div className="homePrice">{item.rating}</div>
+                          <button onClick={() => handleAddToCart(item)}>Add to cart</button>
                         </div>
                       </div>
                       <div className="lower_Middle_Child3_Parent">

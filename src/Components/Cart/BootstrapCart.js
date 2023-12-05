@@ -19,10 +19,8 @@ export default function CartCheckout() {
   const nav = useNavigate();
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
-  // const userId = localStorage.getItem("userId");
+ 
 
-
-  
 
   useEffect(() => {
     let value = 0;
@@ -36,7 +34,6 @@ export default function CartCheckout() {
   }, [cartItems]);
 
 
-
     const handleClick= async(itemid)=>{
         
        await axios.post("https://udemy-backend-t47s.onrender.com/api/remove",{id:itemid})
@@ -44,10 +41,13 @@ export default function CartCheckout() {
     }
     useEffect(() => {
       axios
-        .get("http://localhost:4005/cart/cartfind")
+
+        .get("https://udemy-backend-t47s.onrender.com/cart/cartfind")
         .then((res) => setCartItems(res.data))
         .catch((err) => console.log(err));
+
     },);
+
   // Payment integration.....
 
     
@@ -64,16 +64,16 @@ export default function CartCheckout() {
       "Content-Type": "application/json",
     };
     const response = await fetch(
-      "https://udemy-backend-t47s.onrender.com/out/create-checkout-session",
+      "http://localhost:4005/out/create-checkout-session",
       {
         method: "POST",
         headers: headers,
         body: JSON.stringify(body),
       }
     );
-    await axios.post("https://udemy-backend-t47s.onrender.com/api/postlearn",cartItems)
+    await axios.post("http://localhost:4005/api/postlearn",cartItems)
 
-    await axios.delete("https://udemy-backend-t47s.onrender.com/api/delete")
+    await axios.delete("http://localhost:4005/api/delete")
 
     const session = await response.json();
     const result = stripe.redirectToCheckout({

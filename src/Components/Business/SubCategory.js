@@ -18,6 +18,28 @@ import Footer from "../Footer/Footer";
                     const params =useParams()
                     console.log(params)
                     const[data,setData]=useState([])
+                    const [items,setItems]=useState()
+
+                    useEffect(()=>{
+                      axios.get("https://udemy-backend-t47s.onrender.com/cart/cartfind")
+                      .then((res)=>setItems(res.data))
+                      .catch((err)=>console.log(err))
+                      },[])
+                      
+                      // const userid = localStorage.getItem("userId");
+                          const handleAddToCart= async(item)=>{
+                            console.log(item.id)
+                            const cartData= items.find((items)=>items.id === item.id)
+                            // console.log(cartData.id)
+                            if(cartData){
+                              alert("Cart Data Matched")
+                            }
+                  
+                            else{
+                              await axios.post("https://udemy-backend-t47s.onrender.com/cart/addToCart", item);   
+                            }
+                            
+                          }
 
                     useEffect(()=>{
                         axios.get("https://udemy-backend-t47s.onrender.com/api/getdata")
@@ -51,6 +73,7 @@ import Footer from "../Footer/Footer";
                                                     <div className="homeWriter">{item.writer}</div>
                                                     <div className="homeRating">{item.rating}</div>
                                                     <div className="homePrice">&#8377;&nbsp;{item.price}</div>
+                                                    <button onClick={() => handleAddToCart(item)}>Add to cart</button>
                                     </div>
                                 )
                                })
@@ -148,10 +171,12 @@ import Footer from "../Footer/Footer";
                                         <div style={{width:"98%"}}>{item.des.slice(0,75)}..</div>                                   
                                         <div className="homeWriter">{item.writer}</div>
                                         <div className="homePrice">{item.rating}</div>
+                                        <button onClick={() => handleAddToCart(item)}>Add to cart</button>
                                         </div>
                                         </div>
                                         <div className="lower_Middle_Child3_Parent">
                                         <div className="lower_Middle_Child3">&#8377;{item.price}</div>
+                                        
                                         </div>
                                     </div>
                                 )
